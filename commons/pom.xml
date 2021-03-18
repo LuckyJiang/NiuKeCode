@@ -9,10 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <properties>
-        <java.version>8</java.version>
+        <java.version>1.8</java.version>
     </properties>
     <artifactId>commons</artifactId>
     <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

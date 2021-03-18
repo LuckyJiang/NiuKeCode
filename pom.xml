@@ -8,6 +8,12 @@
     <artifactId>niukecode</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <modules>
         <module>commons</module>
         <module>LeetCode</module>
@@ -19,7 +25,11 @@
         <module>ShuaTi</module>
         <module>PSO</module>
     </modules>
-
+    <properties>
+        <spring.version>5.0.2.RELEASE</spring.version>
+        <java.version>1.8</java.version>
+        <jackson-core.version>2.6.1</jackson-core.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
