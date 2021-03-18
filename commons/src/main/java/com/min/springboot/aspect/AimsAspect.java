@@ -2,7 +2,11 @@ package com.min.springboot.aspect;
 
 
 import com.min.springboot.exception.entity.AIMSException;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
+
 
 /**
  * @author jxm
@@ -10,8 +14,6 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class AimsAspect {
-
-    //todo 日志
 
     @Pointcut("execution(* com.min.springboot.service.impl.AimsServiceImpl.*(..))")
     public void aimsAspect(){}
