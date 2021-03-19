@@ -1,4 +1,4 @@
-package com.min.springboot.controller;
+package com.min.springboot.enums;
 
 import com.min.springboot.enums.常量接口;
 import com.min.springboot.enums.常量类;
