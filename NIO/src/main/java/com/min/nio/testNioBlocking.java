@@ -43,8 +43,8 @@ public class testNioBlocking {
 
         //4.发送数据给服务端
         int i =0;
-        while (i<50){
-            String ss = clientName +  new Date().toString();
+        while (i<1){
+            String ss = clientName +  new Date().toString() + "\t" + i;
             buf.put(ss.getBytes());
             buf.flip();//切换读模式到写模式
             sChannle.write(buf);
@@ -52,7 +52,7 @@ public class testNioBlocking {
             Thread.sleep(100);
             i++;
         }
-
+        Thread.sleep(1000);
         //5.关闭通道
         sChannle.close();
     }

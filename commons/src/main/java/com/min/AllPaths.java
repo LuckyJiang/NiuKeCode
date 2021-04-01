@@ -37,5 +37,19 @@ public class AllPaths {
         //jar包路径：C:\Users\pc-fl\Desktop\SimPSO\案例demo\server\server5
         String locationPath1 = ResourceUtils.getURL("classpath:").getPath();
         System.out.println("class路径：" + locationPath1);
+
+        /**
+         * 获取当前项目工程下静态资源图片路径，以下两种方法皆可
+         */
+        //方法一：
+       /* String path = this.getClass().getResource("/static/img/logo.png").getPath();
+        System.err.println("path：" + path);*/
+        // path：C:/Users/Administrator/Desktop/wechat-project/demo/target/classes/static/img/logo.png
+
+        //方法二
+        /*String path2 = this.getClass().getClassLoader().getResource("static/img/logo.png").getPath();
+        System.err.println("path2：" + path2);*/
+        // path2：/C:/Users/Administrator/Desktop/wechat-project/demo/target/classes/static/img/logo.png
     }
+
 }
