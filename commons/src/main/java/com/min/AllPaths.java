@@ -1,5 +1,6 @@
 package com.min;
 
+import org.springframework.boot.system.ApplicationHome;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
 
@@ -21,6 +22,12 @@ public class AllPaths {
         String path3 = System.getProperty("user.dir");
         System.out.println("类所在的工程路径" + path3);
 
+
+        //Idea中：destPath：E:\Projects\GIT\SimPSO\SimPSOServer\target
+        //jar包：C:\Users\pc-fl\Desktop\SimPSO\案例demo\server\server5
+       /* ApplicationHome ah = new ApplicationHome(getClass());
+        String destPath = ah.getSource().getParentFile().toString();
+        System.out.println("ApplicationHome:" + destPath);*/
 
         /**
          * 获取项目class路径方法
