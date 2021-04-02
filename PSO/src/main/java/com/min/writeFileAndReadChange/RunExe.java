@@ -31,7 +31,6 @@ public class RunExe {
                     }
                 }
             }).start();
-//            runExe(args);   //会阻塞，一个个执行
         }*/
 
         /**
@@ -40,7 +39,7 @@ public class RunExe {
         //调用exe的时候，后面被阻塞了
         runExe(args);
         for (int i = 0; i < 10; i++) {
-            System.out.println("验证调用exe是否会引起阻塞" +i);
+            System.out.println("被exe的执行阻塞" +i);
         }
 
 
