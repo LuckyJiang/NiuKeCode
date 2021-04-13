@@ -1,4 +1,4 @@
-package com.min;
+package com.min.files;
 
 import java.io.File;
 import java.io.FileInputStream;
