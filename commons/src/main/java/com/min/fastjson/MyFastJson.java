@@ -6,6 +6,11 @@ package com.min.fastjson;
  * @date 2021/4/13 11:25
  */
 import com.alibaba.fastjson.JSON;
+
+/**
+ * 总结了所有json转换的jar包
+ * https://www.jb51.net/article/157516.htm
+ */
 public class MyFastJson {
     public static void main(String[] args) {
         //创建测试object
