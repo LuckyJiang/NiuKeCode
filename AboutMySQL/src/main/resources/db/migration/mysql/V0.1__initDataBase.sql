@@ -1,4 +1,4 @@
---MySQL 关于数据主键、外键的设置和级联操作  https://blog.csdn.net/phpdadao/article/details/22935401
+--1、MySQL 关于数据主键、外键的设置和级联操作  https://blog.csdn.net/phpdadao/article/details/22935401
 --  . cascade方式：在父表上update/delete记录时，同步update/delete掉子表的匹配记录
 --
 --    . set null方式
@@ -13,3 +13,7 @@
 --
 --    . Set default方式
 -- 父表有变更时,子表将外键列设置成一个默认的值 但Innodb不能识别
+
+
+-- 2、关于时间类型以及相关操作：查询或者排序
+-- https://blog.csdn.net/csdnluolei/article/details/86488461
