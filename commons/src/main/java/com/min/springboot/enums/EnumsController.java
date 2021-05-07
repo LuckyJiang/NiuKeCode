@@ -17,6 +17,11 @@ import java.util.List;
 @RestController
 public class EnumsController {
 
+    /**
+     * 枚举详解
+     * https://blog.csdn.net/javazejian/article/details/71333103
+     * @return
+     */
     @GetMapping("/enums")
     public List<String> list(){
         List<String> list = new ArrayList<>();
