@@ -11,6 +11,7 @@ import java.io.IOException;
  * @date 2021/4/2 10:59
  *
  * 文件复制：https://www.cnblogs.com/zq-boke/p/8523710.html
+ * 关于路径，非常好的总结：http://www.manongjc.com/detail/12-wgogzfwvohwzsfm.html
  */
 public class FileCopyUtils {
 
