@@ -45,19 +45,30 @@ public class RunExe {
 
     }
 
-    private static void runExe(String[] args) throws IOException {
+    private static void runExe(String[] args)  {
 
-        System.out.printf("Output of running %s is:", Arrays.toString(args));
-        Process process = new ProcessBuilder("E:\\Projects\\GIT\\Python\\dist\\sleep.exe").start();
-        InputStream is = process.getInputStream();
-        InputStreamReader isr = new InputStreamReader(is);
-        BufferedReader br = new BufferedReader(isr);
-        String line;
+        try{
+            System.out.printf("Output of running %s is:", Arrays.toString(args));
+            // Process process = new ProcessBuilder("E:\\Projects\\GIT\\Python\\dist\\sleep.exe").start();
+            Process process = new ProcessBuilder("D:\\工作\\项目\\SimPSO\\3.案例demo\\demo\\demo1\\过程矩阵转换工具V1\\start_pmp.bat").start();
+            /*InputStream is = process.getInputStream();
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader br = new BufferedReader(isr);
+            String line;
 
 //        System.out.printf("Output of running %s is:", Arrays.toString(args));
 
-        while ((line = br.readLine()) != null) {
-            System.out.println(line);
+            line = br.readLine();
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+            process.destroyForcibly();*/
+
+            /*process.waitFor();
+            process.destroyForcibly();*/
+            System.out.println("nihao ");
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
     }
 
